@@ -1,0 +1,44 @@
+:root {
+  --header-text: #ffffff;
+  --title-text: #000000;
+  --black-op-56: #00000056;
+  --footer-text: #545454;
+  --accent-color: #ff6b08;
+  --modal-titles-color: #8c8c8c;
+  --rating-color: #ff6b01;
+  --backgr-footer: #f7f7f7;
+  --font-family: 'Roboto', sans-serif;
+  --font-style: normal;
+}
+
+.container {
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 768px) {
+    max-width: 618px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1024px) {
+    max-width: 882px;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
