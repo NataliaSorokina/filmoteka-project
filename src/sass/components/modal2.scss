@@ -7,11 +7,12 @@
   background-color: rgba(0, 0, 0, 0.25);
   visibility: visible;
   opacity: 1;
+  @include transition(visibility);
   // @include transition(visibility);
-  // @include transition(opacity);
-  transition-property: visibility, opacity;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(opacity);
+  // transition-property: visibility, opacity;
+  // transition-duration: 250ms;
+  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   overflow-y: auto;
 }
 
@@ -313,12 +314,12 @@
     border: none;
     color: var(--header-text);
     background: var(--rating-color);
-    // @include transition(color);
-    // @include transition(background);
-    // @include transition(border);
-    transition-property: color, background;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition(color);
+    @include transition(background);
+    @include transition(border);
+    // transition-property: color, background;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     // transition-property: visibility, opacity;
     // transition-duration: 250ms;
     // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
