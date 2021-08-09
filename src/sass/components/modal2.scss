@@ -9,11 +9,15 @@
   opacity: 1;
   // @include transition(visibility);
   // @include transition(opacity);
-  //   transition: visibility $duration $timing-function, opacity $duration $timing-function;
+  transition-property: visibility, opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   overflow-y: auto;
 }
 
-.is-hidden {
+/* .is-hidden */
+.visually-hidden {
+  // display: none;
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -99,7 +103,7 @@
   height: 18px;
 }
 
-.lightbox__poster {
+.card-poster {
   //   min-width: 240px;
   //   height: 357px;
   //   //   margin-left: auto;
@@ -116,7 +120,7 @@
   //     height: 478px;
   //   }
 }
-.lightbox__img {
+.card-poster__img {
   //   min-width: 240px;
   //   height: 357px;
   //   justify-content: center;
@@ -133,7 +137,7 @@
   }
 }
 
-.lightbox__title {
+.card-records__title {
   display: block;
   margin-top: 0;
   margin-bottom: 20px;
@@ -148,14 +152,14 @@
   }
 }
 
-.lightbox__info {
+.card-records__info {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   padding-bottom: 20px;
 }
 
-.lightbox__items {
+.card-records__items {
   display: block;
   width: 40%;
   padding-left: 0;
@@ -173,7 +177,7 @@
   //   }
 }
 
-.lightbox__item {
+.card-records__item {
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
@@ -185,13 +189,13 @@
   }
 }
 
-.lightbox__subitems {
+.card-records__subitems {
   display: block;
   //   width: 50%;
   padding-left: 0;
   margin: 0;
 }
-.lightbox__subitem {
+.card-records__subitem {
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
@@ -208,7 +212,7 @@
   }
 }
 
-.vote {
+.card-records__vote {
   display: inline-block;
   text-align: center;
   width: 36px;
@@ -222,7 +226,7 @@
   background: var(--rating-color);
 }
 
-.votes {
+.card-records__votes {
   display: inline-block;
   text-align: center;
   width: 36px;
@@ -242,7 +246,7 @@
 //   //   color: var(--title-text);
 // }
 
-.lightbox_description {
+.card-records_description {
   //   padding-left: 20px;
   //   padding-right: 20px;
   font-weight: 500;
@@ -251,7 +255,7 @@
   line-height: 20px;
 }
 
-.lightbox__about {
+.card-records__about {
   margin: 0;
   padding-bottom: 10px;
   font-weight: 500;
@@ -280,7 +284,7 @@
 //   }
 // }
 
-.lightbox__buttons {
+.card-buttons {
   display: flex;
   justify-content: space-between;
   margin-top: 21px;
@@ -292,7 +296,7 @@
   }
 }
 
-.button {
+.card-button {
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
@@ -309,6 +313,15 @@
     border: none;
     color: var(--header-text);
     background: var(--rating-color);
+    // @include transition(color);
+    // @include transition(background);
+    // @include transition(border);
+    transition-property: color, background;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    // transition-property: visibility, opacity;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   @media screen and (min-width: 768px) {
