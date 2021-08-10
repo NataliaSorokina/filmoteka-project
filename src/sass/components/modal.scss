@@ -266,7 +266,7 @@
 .modal-window {
   position: relative;
   padding: 48px 20px 41px;
-  background: var(--header-text);
+  background-color: var(--header-text);
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -284,7 +284,7 @@
   justify-content: center;
   width: 30px;
   height: 30px;
-  background: var(--header-text);
+  background-color: var(--header-text);
   fill: var(--title-text);
   border: none;
   cursor: pointer;
@@ -385,7 +385,7 @@
   border-radius: 5px;
   border: none;
   color: var(--header-text);
-  background: var(--rating-color);
+  background-color: var(--rating-color);
 }
 
 .card-records__votes {
@@ -396,7 +396,7 @@
   border-radius: 5px;
   border: none;
   color: var(--title-text);
-  background: var(--backgr-footer);
+  background-color: var(--backgr-footer);
 }
 
 .card-records_description {
@@ -437,7 +437,7 @@
   width: 112.58px;
   height: 44px;
   border: 1px solid var(--title-text);
-  background: transparent;
+  background-color: transparent;
   box-sizing: border-box;
   border-radius: 5px;
   text-transform: uppercase;
@@ -446,7 +446,7 @@
   &:hover {
     border: none;
     color: var(--header-text);
-    background: var(--rating-color);
+    background-color: var(--rating-color);
     @include transition(color);
     @include transition(background);
     @include transition(border);
