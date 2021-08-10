@@ -23,7 +23,7 @@ window.addEventListener('keydown', escKeyPressHandler);
 
 function modalWindowCloseHandler() {
 
-closeModalBtn.removeEventListener('click', modalCloseHandler);
+closeModalBtn.removeEventListener('click', modalWindowCloseHandler);
 modal.removeEventListener('click', backdropClickHandler);
 window.removeEventListener('keydown', escKeyPressHandler);
     
